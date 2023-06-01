@@ -1,12 +1,20 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { Info } from "./Info";
 
 export const Card = ({ data }) => {
+  let navigate = useNavigate();
+
   return (
     <>
       {data
         ? data.map((item) => {
             return (
-              <div className="card">
+              <div
+                className="card"
+                key={item.id}
+                onClick={() => navigate(`/${item.id}`)}
+              >
                 <img
                   src={`${item.thumbnail.path}.${item.thumbnail.extension}`}
                 />

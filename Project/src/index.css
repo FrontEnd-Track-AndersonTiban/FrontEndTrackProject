@@ -21,6 +21,10 @@ body {
   margin-left: 7%;
   margin-right: 5%;
 }
+.card img :hover::after {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay color */
+  opacity: 0;
+}
 
 .search-bar {
   width: 80%;
