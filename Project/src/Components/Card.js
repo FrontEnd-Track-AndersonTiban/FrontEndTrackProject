@@ -15,9 +15,7 @@ export const Card = ({ data }) => {
                 key={item.id}
                 onClick={() => navigate(`/${item.id}`)}
               >
-                <img
-                  src={`${item.thumbnail.path}.${item.thumbnail.extension}`}
-                />
+                <img src={`${item.images.sm}`} />
                 <div className="title">
                   <h3>{item.name}</h3>
                 </div>
