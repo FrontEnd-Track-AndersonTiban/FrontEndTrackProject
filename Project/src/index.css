@@ -61,11 +61,17 @@ body {
 .card:hover {
   transform: scale(1.1);
   cursor: pointer;
-  opacity: 90%;
-  background-color: black;
 }
 
 #title {
-  size: 100px;
-  color: rgb(36, 30, 87);
+  size: 500px;
+  color: rgb(225, 225, 32);
+}
+.card-title {
+  padding-left: 30%;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0%;
 }

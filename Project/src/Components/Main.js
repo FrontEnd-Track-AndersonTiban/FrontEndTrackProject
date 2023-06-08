@@ -13,7 +13,6 @@ export const Main = () => {
   useEffect(() => {
     const fetch = async () => {
       const res = await axios.get(url);
-      // setItem(res.data.data.results);
       setItem(res.data);
     };
     fetch();
@@ -22,16 +21,11 @@ export const Main = () => {
   return (
     <>
       <div className="header">
-        <div className="search-bar">
-          <input
-            type="search"
-            placeholder="search here"
-            className="search"
-          ></input>
-        </div>
+        <div className="search-bar"></div>
       </div>
-      <h1 id="title">SuperHeros & Villans Library</h1>
-
+      <div className="banner">
+        <h1 id="title">SuperHeros & Villians Library</h1>
+      </div>
       <div className="content">
         {!item ? <p>Not Found</p> : <Card data={item} />}
       </div>
