@@ -17,7 +17,7 @@ export const Card = ({ data }) => {
                   onClick={() => navigate(`/${item.id}`)}
                 >
                   <img src={`${item.images.sm}`} alt={item.name} />{" "}
-                  {/* Add alt attribute for accessibility */}
+                  {/* alt attribute for accessibility */}
                   <div className="card-title">
                     <h3>{item.name}</h3>
                   </div>

@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 export const Main = () => {
   const [url, setUrl] = useState(
-    // Initial URL for fetching superhero data
+    // URL for fetching superhero data
     "https://akabab.github.io/superhero-api/api/all.json"
   );
   const [item, setItem] = useState([]); // Declare 'item' state variable
@@ -21,13 +21,10 @@ export const Main = () => {
     };
 
     fetchData(); // Call the fetchData function
-  }, [url]); // Include 'url' as a dependency to refetch data when it changes
+  }, [url]);
 
   return (
     <>
-      <div className="header">
-        <div className="search-bar"></div>
-      </div>
       <div className="banner">
         <h1 id="title">SuperHeroes & Villains Library</h1>
       </div>
