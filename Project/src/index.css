@@ -1,23 +1,26 @@
+/* Apply the 'Bangers' font family to all elements */
 * {
   font-family: "Bangers", cursive;
 }
+
+/* Styles for the content section */
 .content {
   width: 80%;
   margin: 3rem auto;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 1rem; */
   display: flex;
   flex-wrap: wrap;
 }
+
+/* Background styles for the body */
 body {
   background-color: white;
   background-image: url("./comicbook.jpg");
 }
+
+/* Styles for the card */
 .card {
   background-color: black;
   color: white;
-  /* position: relative; */
   width: 20%;
   margin-top: 3rem;
   padding: 1.5px;
@@ -25,18 +28,13 @@ body {
   margin-right: 5%;
 }
 
-.search-bar {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
-
+/* Styles for the card image */
 .card img {
   width: 100%;
   height: 75%;
 }
 
+/* Styles for the info content */
 .info-content {
   width: 60%;
   margin: auto;
@@ -49,11 +47,14 @@ body {
   border-radius: 30px;
 }
 
+/* Styles for the info image */
 .info-img {
   margin-top: 3px;
   padding-left: 20%;
   width: 80%;
 }
+
+/* Transition and hover styles for the card */
 .card {
   transition: transform 0.3s ease;
 }
@@ -63,13 +64,18 @@ body {
   cursor: pointer;
 }
 
+/* Styles for the title */
 #title {
   size: 500px;
   color: rgb(225, 225, 32);
 }
+
+/* Styles for the card title */
 .card-title {
   padding-left: 30%;
 }
+
+/* Styles for the banner */
 .banner {
   display: flex;
   justify-content: center;
